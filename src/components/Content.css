@@ -1,0 +1,20 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contain-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.contain-l{
+    height: 210px;
+    background: red;
+}
+
+.contain-r{
+    height: 210px;
+    background: red;
+}

@@ -1,0 +1,22 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.banner-bg{
+    height: 550px;
+    background: url("https://images.unsplash.com/photo-1546377791-2e01b4449bf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.banner-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.banner-text{
+    color: #fff;
+    text-align: center;
+}
