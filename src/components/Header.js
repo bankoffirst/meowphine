@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiGithub,FiSearch,FiShoppingCart,FiUser } from "react-icons/fi";
+import './Header.css'
 
 function Header() {
     return (
@@ -8,13 +9,14 @@ function Header() {
                 <div className = "header-con">
                     <div className = "logo-container">
                         <a href="#">MeowPhine <FiGithub /></a>
-                        <input type="text" placeholder="Search.."></input>
                     </div>
-                    <ul className = "menu">
-                        <li className="menu-link">
-                            <a href="#">Cart</a>
-                        </li>
-                    </ul>
+                        <div className = "search">
+                            <input type="text" placeholder="Search.."></input>
+                        </div>
+                        <div className = "menu">
+                            <a href="#">Login<FiUser /></a>
+                            <a href="#">Cart<FiShoppingCart /></a>
+                        </div>
                 </div>
             </div>
         </div>
