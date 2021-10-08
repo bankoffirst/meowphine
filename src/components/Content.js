@@ -4,12 +4,22 @@ import "./Content.css"
 function content() {
     return (
         <div className="container">
-                <div className="contain-l">
-                    <h2>Cat</h2>
+            <section className="contain-grid">
+                <div className="contain-item1">
+                    <div className='contain-inner'>
+                        <div>
+                            Cat
+                        </div>
+                    </div>
                 </div>
-                <div className="contain-r">
-                    <h2>Dog</h2>
+                <div className="contain-item2">
+                    <div className='contain-inner'>
+                        <div>
+                            Dog
+                        </div>
+                    </div>
                 </div>
+            </section>
         </div>
     )
 }
