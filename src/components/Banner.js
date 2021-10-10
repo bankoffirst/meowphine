@@ -1,10 +1,11 @@
-import React from 'react'
+import React ,{ useState }from 'react'
 import "./Banner.css"
+import "./Content.css"
+import Content from './Content'
 
 let bannerData = {
     title: "MeowPhine",
     desc: "A creature that is more than a 'Pet' "
-    
 }
 
 function Banner() {
