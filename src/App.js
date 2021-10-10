@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard'
 import LogIn from './components/Login'
 import Signup from './components/SignUp'
 import { AuthProvider } from './components/Auth'
-
+import Cart from './components/Cart'
 
 import Header from './components/Header'
 import Banner from './components/Banner'
@@ -21,11 +21,11 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path = "/"><Main/></Route>
-            <Route exact path="/home"><Home/></Route>
             <Route exact path="/home" component={Home} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/login" component={LogIn} />
             <Route exact path="/signup" component={Signup} />
+            <Route exact path="/cart" component={Cart} />
           </Switch>
         </div>
       </Router>
