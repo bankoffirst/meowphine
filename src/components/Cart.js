@@ -8,17 +8,16 @@ function Cart() {
             <div className = "container">
                 <div className = "header-con">
                     <div className = "logo-container">
-                        <a href="/">MeowPhine <FiGithub /></a>
+                        <a href="/">MeowPhine <FiGithub /> - Cart</a>
+                        
                     </div>
-                        <div className = "search">
-                            <input type="text" placeholder="Search.."></input>
                         </div>
                             <div className = "menu">
                                 <a href="/">Log out<FiUser/></a>
                             </div>
                 </div>
             </div>
-        </div>
+    
     )
 }
 

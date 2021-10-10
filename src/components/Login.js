@@ -5,32 +5,35 @@ import firebaseConfig from '../config'
 import { FiGithub } from 'react-icons/fi'
 import './Login.css'
 import './Header.css'
+import { Link,useHistory } from 'react-router-dom'
+
 function LogIn() {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const { email, password } = e.target.elements;
-        try {
-            firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value);
-        } catch(error) {
-            alert(error);
-        }
+    const history = useHistory();
+    const handleSubmit = (event) => {
+        const { email, password } = event.target.elements;
+        event.preventDefault();
+        firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value)
+        .then((auth) => {
+            history.push("/")
+        })
+        .catch(e => alert(e.message))
+        
     }
     const { currentUser } = useContext(AuthContext);
     if (currentUser) {
-        return <Redirect to="/dashboard" />;
+        return <Redirect to="/" />;
     }
     return (
         <>
-        <div className="header">
-            <div className = "container">
-                <div className = "header-con">
-                    <div className = "logo-container">
-                        <a href="/">MeowPhine <FiGithub /> - Log in</a>
+        <div className="header-log">
+            <div className = "container-log">
+                <div className = "header-con-log">
+                    <div className = "logo-login"><a href="/">MeowPhine <FiGithub /> - Log in</a>
                     </div>
                 </div>
             </div>
-            </div>
-                
+        </div>
+                <div className="bg">
                     <div className="container mt-5">
                     <div className ="login-container">
                         <h1>Log In</h1>
@@ -44,12 +47,23 @@ function LogIn() {
                             <label for="exampleInputPassword1" className="form-label">Password</label>
                             <input type="password" name="password" className="form-control" id="exampleInputPassword1" />
                         </div>
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn-success">Submit</button>  -  <Link to="/signup" className="btn btn-primary">Sign Up</Link>
+                        
                         </form>
                     </div>
+                </div>
         </div>
         </>
     )
 }
 export default LogIn;
-
+/*
+        event.preventDefault();
+        const { email, password } = event.target.elements;
+        try {
+            firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value);
+        } catch(e) {
+            alert(e);
+        }
+    }
+*/

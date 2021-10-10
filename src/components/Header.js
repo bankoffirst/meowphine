@@ -14,7 +14,7 @@ function Header() {
                             <input type="text" placeholder="Search.."></input>
                         </div>
                             <div className = "menu">
-                                <a href="/home">Login<FiUser/></a>
+                                <a href="/dashboard">Login<FiUser/></a>
                                 <a href="/cart">Cart<FiShoppingCart /></a>
                             </div>
                 </div>

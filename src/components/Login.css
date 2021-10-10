@@ -1,31 +1,50 @@
-.header-login{
-    background: #333;
-    height: 80px;
-    
+.container-log{
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.header-con{
+.header-log{
+    background: #fff;
+    height: 80px;
+}
+
+.header-con-log{
     display: flex;
     height: 80px;
-    
+    align-items: center;
 }
 
 .logo-login a {
+    color: #333;
+    text-decoration: none;
     font-weight: bold;
     font-size: 2rem;
-    text-align: center;
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding:20px;
+    padding: 20px;
 }
 
+
 .login-container{
-    
+    max-width: 520px;
+    max-height: 420px;
     margin: 0 auto;
     width: auto;
     display:  flex;
     flex-direction: column;
     padding: 20px;
     border: 1px solid lightgrey;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+
+.bg{
+    background: #333;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    min-width: 500px;
+}
+
+.btn.signup{
+    background: rgb(25, 60, 218);
 }
