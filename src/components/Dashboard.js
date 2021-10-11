@@ -2,21 +2,32 @@ import React, {useContext} from "react";
 import {Redirect} from "react-router-dom";
 import { AuthContext } from "./Auth";
 import firebaseConfig from "../config";
-
-const Dashboard = () => {
+import { FiGithub,FiShoppingCart,FiUser } from "react-icons/fi"
+import './Header.css'
+import './Dashboard.css'
+function Dashboard()  {
     const { currentUser } = useContext(AuthContext);
     if (!currentUser) {
         return <Redirect to="/login"/>;
 
     }
     return (
-        <div>
-            <div className= "container mt-5">
-                <h1>welcome</h1>
-                <p>This is dashboard</p>
-                <button onClick={() => firebaseConfig.auth().signOut()}className = "btn-danger">signOut</button>
+        <div className="header">
+            <div className = "container">
+                <div className = "header-con">
+                    <div className = "logo-container">
+                        <a href="/">MeowPhine <FiGithub /> - Welcome </a>
+                    </div>
+                        <div className = "menu-logout">
+                        <a href="/login" onClick={() => firebaseConfig.auth().signOut()} className="logout">Log out<FiUser/></a>
+                        </div>
+                </div>
+                            <div className= "dashboard">
+                                <h1>Welcome User 1</h1>
+                                <p>This is dashboard </p>
+                            </div>
+                </div>
             </div>
-        </div>
     )
 }
 export default Dashboard;

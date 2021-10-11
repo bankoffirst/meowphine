@@ -9,7 +9,7 @@
 }
 
 .header-con{
-    display: flex;
+    display:flex;
     height: 80px;
     align-items: center;
 }

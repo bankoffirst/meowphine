@@ -1,0 +1,100 @@
+/* https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1092&q=80 */
+
+.container-pro{
+    max-width: 960px;
+    height: 500px;
+    margin: 40px auto;
+    
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background: rgb(224, 224, 224);
+}
+.contain-pro-grid{
+    display: flex;
+    
+}
+.contain-pro-grid-text{
+    width: calc(100% - 500px);
+    margin: 20px auto;
+    flex-wrap: wrap;
+    height:480px;
+    
+}
+.contain-pro-item1{
+    flex-grow: 1;
+    min-width: 33.33%;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    height: 250px;
+    width: 250px;
+    background: url("https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1092&q=80") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+
+.gal-cat{
+    height: 300px;
+    width: 400px;
+    background: url("https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1092&q=80") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+.name-pro{
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.price-pro{
+    font-size: 26px;
+
+}
+.info-grid{
+    width: 100%;
+}
+
+.info-pro-head{
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 60px;
+
+}
+.info-pro-p{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+.cart-pro {
+    margin: 100px 0px 0px 170px;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.cart{
+    font-size: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(171, 235, 151);
+    border: 1px solid rgba(66, 182, 31, 0.74);
+    border-radius: 3px;
+    color: rgb(55, 146, 28);
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: none;
+    padding: 0px 8px;
+    text-align: center;
+    transition-duration: 200ms;
+    transition-property: background-color, border, color, opacity;
+    transition-timing-function: ease;
+    width: auto;
+    min-height: 32px;
+    font-weight: normal;
+    text-decoration: none;
+}
