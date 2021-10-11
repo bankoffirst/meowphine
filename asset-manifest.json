@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/meowphine/static/css/main.93ff611d.chunk.css",
+    "main.js": "/meowphine/static/js/main.c99beddd.chunk.js",
+    "main.js.map": "/meowphine/static/js/main.c99beddd.chunk.js.map",
+    "runtime-main.js": "/meowphine/static/js/runtime-main.97d559df.js",
+    "runtime-main.js.map": "/meowphine/static/js/runtime-main.97d559df.js.map",
+    "static/js/2.a92c2648.chunk.js": "/meowphine/static/js/2.a92c2648.chunk.js",
+    "static/js/2.a92c2648.chunk.js.map": "/meowphine/static/js/2.a92c2648.chunk.js.map",
+    "static/js/3.223a45d6.chunk.js": "/meowphine/static/js/3.223a45d6.chunk.js",
+    "static/js/3.223a45d6.chunk.js.map": "/meowphine/static/js/3.223a45d6.chunk.js.map",
+    "index.html": "/meowphine/index.html",
+    "static/css/main.93ff611d.chunk.css.map": "/meowphine/static/css/main.93ff611d.chunk.css.map",
+    "static/js/2.a92c2648.chunk.js.LICENSE.txt": "/meowphine/static/js/2.a92c2648.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97d559df.js",
+    "static/js/2.a92c2648.chunk.js",
+    "static/css/main.93ff611d.chunk.css",
+    "static/js/main.c99beddd.chunk.js"
+  ]
+}
