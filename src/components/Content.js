@@ -8,7 +8,8 @@ function Content() {
 
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(! click);
-    
+    const [click2, setClick2] = useState(false);
+    const handleClick2 = () => setClick2(! click2);
     return (
         <div className="container">
             <section className="contain-grid">
@@ -23,9 +24,14 @@ function Content() {
                             
                     </div>
                 </div>
-                <div className="contain-item2">
+                <div className={click2 ? "contain-item2 action" : "contain-item2"}>
                     <div className='contain-inner'>
-                    <a href="#" className="cat-btn">DOG</a>
+                            <a href="#" className="dog-btn" onClick={handleClick2}>DOG</a>
+                            {click2 ? (
+                                check = false
+                            ) : (
+                                check = true
+                            )}
                     </div>
                 </div>
             </section>

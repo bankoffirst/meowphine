@@ -1,6 +1,8 @@
 import React from 'react'
 import { FiGithub,FiShoppingCart,FiUser } from "react-icons/fi"
 import './Header.css'
+import './Dashboard.css'
+import Product from './Product'
 
 function Cart() {
     return (
@@ -8,19 +10,18 @@ function Cart() {
             <div className = "container">
                 <div className = "header-con">
                     <div className = "logo-container">
-                        <a href="/">MeowPhine <FiGithub /> - Cart</a>
-                        
+                        <a href="/">MeowPhine <FiGithub /> - Cart </a>
                     </div>
+                        <div className = "menu-logout">
+                        <a className="logout">User 1</a></div>
+                        </div> 
+                            <Product/>
                         </div>
-                            <div className = "menu">
-                                <a href="/">Log out<FiUser/></a>
-                            </div>
                 </div>
-            </div>
     
     )
 }
 
 //<a href="#">Login<FiUser/></a> <Link to="/home">Login <FiUser/></Link>
 export default Cart
-//mofin coming
+//mofin coming 

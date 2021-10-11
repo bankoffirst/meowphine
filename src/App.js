@@ -6,12 +6,6 @@ import LogIn from './components/Login'
 import Signup from './components/SignUp'
 import { AuthProvider } from './components/Auth'
 import Cart from './components/Cart'
-
-import Header from './components/Header'
-import Banner from './components/Banner'
-import Content from './components/Content'
-import Footer from './components/Footer'
-import MainLogin from './components/MainLogin'
 import Main from './components/Main'
 
 function App() {
