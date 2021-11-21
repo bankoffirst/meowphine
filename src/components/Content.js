@@ -15,7 +15,7 @@ function Content() {
             <section className="contain-grid">
                 <div className={click ? "contain-item1 action" : "contain-item1"}>
                     <div className='contain-inner'>
-                            <a href="#" className="cat-btn" onClick={handleClick}>CAT</a>
+                            <a href="/cat" className="cat-btn" onClick={handleClick}>CAT</a>
                             {click ? (
                                 check = false
                             ) : (
@@ -26,7 +26,7 @@ function Content() {
                 </div>
                 <div className={click2 ? "contain-item2 action" : "contain-item2"}>
                     <div className='contain-inner'>
-                            <a href="#" className="dog-btn" onClick={handleClick2}>DOG</a>
+                            <a href="/dog" className="dog-btn" onClick={handleClick2}>DOG</a>
                             {click2 ? (
                                 check = false
                             ) : (

@@ -28,7 +28,17 @@
     text-align: center;
     display: flex;
 }
-
+.tabtab{
+    margin: 20px auto;
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    color: #333;
+}
+.coloricon{
+    color: #fff;
+}
 .search a {
     float: center;
     display: block;
