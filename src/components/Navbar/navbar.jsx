@@ -1,9 +1,9 @@
 import React from 'react'
 import { AppBar,Toolbar,IconButton,Badge,MenuItem,Menu,Typography } from '@material-ui/core';
-import { Class, ShoppingCart } from '@material-ui/icons';
+import { Class, ShoppingCart ,PersonOutline} from '@material-ui/icons';
 import { FiGithub,FiUser } from "react-icons/fi";
 import useStyles from "./styles";
-
+import { Link } from 'react-router-dom';
 const Navbar = ({ totalItems }) => {
     const classes = useStyles();
 
@@ -19,13 +19,18 @@ const Navbar = ({ totalItems }) => {
                     <div className="tabtab"/>
                         <div className={classes.grow}/>
                         <div classname={classes.button}>
-                        <IconButton aria-label="Show cart item"  >
-                            <Badge badgeContent={totalItems} color="Secondary" >
+                            <IconButton component={Link} to="/cart" aria-label="Show cart item"  >
+                                <Badge badgeContent={totalItems} color="Secondary" >
+                                    <div className="coloricon">
+                                        <ShoppingCart fontSize="large"/>
+                                    </div>
+                                </Badge>
+                            </IconButton>
+                            <IconButton component={Link} to="/dashboard" aria-label="User"  >
                                 <div className="coloricon">
-                                    <ShoppingCart fontSize="large"/>
+                                    <PersonOutline fontSize="large"/>
                                 </div>
-                            </Badge>
-                        </IconButton>
+                            </IconButton>
                         </div>
                     </Toolbar>
                 </div>

@@ -9,7 +9,7 @@ function Dashboard()  {
     const { currentUser } = useContext(AuthContext);
     if (!currentUser) {
         return <Redirect to="/login"/>;
-
+    
     }
     return (
         <div className="header">
@@ -23,7 +23,7 @@ function Dashboard()  {
                         </div>
                 </div>
                             <div className= "dashboard">
-                                <h1>Welcome User 1</h1>
+                                <h1>Welcome {currentUser.email}</h1>
                                 <p>This is dashboard </p>
                             </div>
                 </div>
