@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Cart = ( { cart ,handleUpdateCartQty,handleRemoveFromCart,handleEmptyCart} ) => {
     const classes = useStyles();
     const EmptyCart = () => (
-        <Typography variant="subtitle1">You have no Pet in your Cart, Start finding your lovely Pet</Typography>
+        <Typography variant="subtitle1">You have no pet in your cart, Start finding your lovely pet</Typography>
     );
 
     const FilledCart = () => (
@@ -31,7 +31,7 @@ const Cart = ( { cart ,handleUpdateCartQty,handleRemoveFromCart,handleEmptyCart}
     return (
         <Container>
             <div className={classes.toolbar}/>
-            <Typography className={classes.title} variant="h3" gutterBottom>Your Pet Cart</Typography>
+            <Typography className={classes.title} variant="h3" gutterBottom>Your Cart</Typography>
             { !cart.line_items.length ? <EmptyCart/>:<FilledCart/>}
         </Container>
             
