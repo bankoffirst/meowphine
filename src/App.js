@@ -10,7 +10,7 @@ import { commerce } from './components/lib/commerce';
 import Navbar from './components/Navbar/navbar'
 import Cart from './components/Carts/Cart'
 import Products from './components/Product/Products'
-import Cat from './components/Product/Product_cat'
+import Checkout from './components/payment/Checkout'
 const App = () => {
   const [products, setProducts] = useState([]);
 
@@ -35,7 +35,7 @@ const App = () => {
       
     setCart(cart);
   }
-  const handleRemoveFromCart = async (productId, quantity) => {
+  const handleRemoveFromCart = async (productId) => {
     const {cart} = await commerce.cart.remove(productId);
     
     setCart(cart);
@@ -71,8 +71,12 @@ const App = () => {
                   handleEmptyCart={handleEmptyCart}
                   />
                 </Route>
+                <Route exact path="/checkout">
+                  <Checkout cart={cart} 
+                  handleEmptyCart={handleEmptyCart}/>
+                  </Route>
                 <Route exact path="/cat">
-                      <Products className="container" products={products} onAddToCart={handleAddToCart}/></Route>
+                  <Products className="container" products={products} onAddToCart={handleAddToCart}/></Route>
             </Switch>
             </div>
           </Switch>
