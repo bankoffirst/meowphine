@@ -47,7 +47,9 @@ function SignUp ()  {
                                 <input type="password" name="password" className="form-control" id="exampleInputPassword1" />
                                 <span id="passwordHelpInline" class="form-text"></span>Must be 6-20 characters long.
                             </div>
-                            <button type="submit" className="btn btn-success">SignUp</button>
+                            <button type="submit" className="btn btn-success">SignUp</button> 
+                            <h5 className="form-text">If you have Email You can</h5> 
+                            <Link to="/login" type="submit" className="btn btn-primary">Login</Link>
                             </form>
                     </div>
                 </div>

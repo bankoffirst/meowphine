@@ -9,6 +9,12 @@
     background-size: cover;
     overflow: hidden;
 }
+.dog-bg{
+    height: 820px;
+    background: url("https://images.unsplash.com/photo-1546377791-2e01b4449bf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
 .banner-bg.action{
     background: url("https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80") no-repeat;
 }

@@ -57,13 +57,3 @@ function LogIn() {
     )
 }
 export default LogIn;
-/*
-        event.preventDefault();
-        const { email, password } = event.target.elements;
-        try {
-            firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value);
-        } catch(e) {
-            alert(e);
-        }
-    }
-*/
