@@ -1,14 +1,15 @@
-import React ,{ useState }from 'react'
-import "./Banner.css"
-import "./Content.css"
+import React from 'react'
+import "../Content.css" 
+import Footer from '../Footer'
 let bannerData = {
-    title: "MeowPhine",
-    desc: "A creature that is more than a 'Pet' "
+    title: "No Dogs at this time ",
+    desc: "Dog is coming ..."
 }
 
-function Banner() {
+function Dog() {
     return (
-        <div className="banner-bg">
+        <>
+        <div className="dog-bg">
             <div className="container">
                 <div className="banner-con">
                     <div className="banner-text">
@@ -20,7 +21,9 @@ function Banner() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 
-export default Banner
+export default Dog

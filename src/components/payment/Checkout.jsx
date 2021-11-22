@@ -18,7 +18,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
 
   const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
   const backStep = () => setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  
+
   useEffect(() => {
     if (cart.id) {
       const generateToken = async () => {
@@ -33,12 +33,11 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
     }
   }, [cart]);
 
-  const test = (data) => {
+  const next = (data) => {
     setShippingData(data);
-
+    
     nextStep();
   };
-
   let Confirmation = () => (order.customer ? (
     <>
       <div>
@@ -56,17 +55,18 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   ));
 
   if (error) {
+    console.log(error);
     Confirmation = () => (
       <>
-        <Typography variant="h5">Error: {error}</Typography>
+        <Typography variant="h5">Error : {error} </Typography>
+        <Divider className={classes.divider} />
         <br />
         <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
       </>
     );
   }
-
   const Form = () => (activeStep === 0
-    ? <AddressForm checkoutToken={checkoutToken} nextStep={nextStep} setShippingData={setShippingData} test={test} />
+    ? <AddressForm checkoutToken={checkoutToken} nextStep={nextStep} setShippingData={setShippingData} next={next} />
     : <PaymentForm checkoutToken={checkoutToken} nextStep={nextStep} backStep={backStep} shippingData={shippingData} onCaptureCheckout={onCaptureCheckout} />);
 
   return (

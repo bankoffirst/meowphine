@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {Redirect} from "react-router-dom";
+import {Redirect, Link} from "react-router-dom";
 import { AuthContext } from "./Auth";
 import firebaseConfig from "../config";
 import { FiGithub,FiShoppingCart,FiUser } from "react-icons/fi"

@@ -11,6 +11,7 @@ import Navbar from './components/Navbar/navbar'
 import Cart from './components/Carts/Cart'
 import Products from './components/Product/Products'
 import Checkout from './components/payment/Checkout'
+import Dog from './components/Product/Dog'
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
@@ -62,13 +63,12 @@ const App = () => {
       const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
 
       setOrder(incomingOrder);
-
       refreshCart();
     } catch (error) {
       setErrorMessage(error.data.error.message);
     }
   };
-
+  
   useEffect(() => {
       fetchProducts();
       fetchCart();
@@ -104,6 +104,7 @@ const App = () => {
                   </Route>
                 <Route exact path="/cat">
                   <Products className="container" products={products} onAddToCart={handleAddToCart} handleUpdateCartQty/></Route>
+                <Route exact path="/dog"><Dog/></Route>
             </Switch>
             </div>
           </Switch>
