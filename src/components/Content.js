@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import "./Content.css" 
 
-let check = true
-
 function Content() {
-
+    const check = true;
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(! click);
     const [click2, setClick2] = useState(false);
