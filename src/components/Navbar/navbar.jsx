@@ -1,7 +1,7 @@
 import React from 'react'
-import { AppBar,Toolbar,IconButton,Badge,MenuItem,Menu,Typography } from '@material-ui/core';
-import { Class, ShoppingCart ,PersonOutline} from '@material-ui/icons';
-import { FiGithub,FiUser } from "react-icons/fi";
+import { Toolbar,IconButton,Badge} from '@material-ui/core';
+import { ShoppingCart ,PersonOutline} from '@material-ui/icons';
+import { FiGithub } from "react-icons/fi";
 import useStyles from "./styles";
 import { Link } from 'react-router-dom';
 const Navbar = ({ totalItems }) => {

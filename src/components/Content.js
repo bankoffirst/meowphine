@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./Content.css" 
-import { FiGithub,FiShoppingCart,FiUser,FiX } from "react-icons/fi";
 
 let check = true
 

@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
-import {Redirect, Link} from "react-router-dom";
+import {Redirect} from "react-router-dom";
 import { AuthContext } from "./Auth";
 import firebaseConfig from "../config";
-import { FiGithub,FiShoppingCart,FiUser } from "react-icons/fi"
+import { FiGithub,FiUser } from "react-icons/fi"
 import './Header.css'
 import './Dashboard.css'
 function Dashboard()  {
@@ -24,7 +24,7 @@ function Dashboard()  {
                 </div>
                             <div className= "dashboard">
                                 <h1>Welcome {currentUser.email}</h1>
-                                <p>This is dashboard </p>
+                                <p>This is your profile </p>
                             </div>
                 </div>
             </div>
